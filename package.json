@@ -1,20 +1,22 @@
 {
-  "name": "zomato_api",
+  "name": "zomato-api",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "set DEBUG=db:before,db:after,error:mongodb & nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "debug": "^4.3.4",
     "express": "^4.18.2",
-    "mongoose": "^6.8.4"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
+    "mongoose": "^6.7.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "razorpay": "^2.8.4"
   }
 }
